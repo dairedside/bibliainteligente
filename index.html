@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bíblia Gênesis – Revelação Direta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'serif': ['"Cormorant Garamond"', 'serif'],
+              'sans': ['Lato', 'sans-serif'],
+            },
+            colors: {
+              'celestial': {
+                '900': '#0d1b2a',
+                '800': '#1b263b',
+              },
+              'gold': {
+                '50': '#fffbeb',
+                '100': '#fef3c7',
+                '200': '#fde68a',
+                '300': '#fcd34d',
+                '400': '#fbbf24',
+                '500': '#f59e0b',
+                '600': '#d97706',
+                '700': '#b45309',
+              },
+              'parchment': {
+                '50': '#fdfbf6',
+                '100': '#fbf6ea',
+              },
+              'light': {
+                '100': '#e0e1dd',
+                '200': '#c7c8c3',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-celestial-900 font-sans">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
